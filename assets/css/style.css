@@ -52,7 +52,7 @@ header nav ul li a {
 header nav ul li a:hover {
   background: black;
   color: white;
-  border: solid white 3px;
+  border: solid white 4px;
   border-radius: 15px;
   text-shadow: none;
 }
@@ -64,6 +64,7 @@ footer {
   justify-content: space-between;
   flex-wrap: wrap;
   width: 100%;
+  border-top: solid black 5px;
 }
 
 footer h2 {
@@ -83,6 +84,7 @@ footer a {
 
 .about-me-section {
   display: flex;
+  padding: 10px;
 }
 
 .section-title {
@@ -90,6 +92,12 @@ footer a {
   border-right: solid black 3px;
   display: flex;
   align-items: center;
+  justify-content: flex-end;
+  padding-right: 10px;
+}
+
+.section-title h2 {
+  font-size: 2em;
 }
 
 .section-contents {
@@ -98,6 +106,7 @@ footer a {
 
 .work-section {
   display: flex;
+  padding: 10px;
 }
 
 .work-examples {
@@ -133,4 +142,35 @@ footer a {
   border-bottom-right-radius: 15px;
   position: absolute;
   top: 45%;
+}
+
+.contact-me-section {
+  display: flex;
+  padding: 10px;
+}
+
+.contact-me-section .section-contents .contact-info ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.contact-me-section .section-contents .contact-info ul li h3 {
+  padding: 10px 15px;
+  font-weight: bold;
+  font-size: 23px;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.contact-me-section .section-contents .contact-info ul li a {
+  color: black;
+  padding: 10px 15px;
+}
+
+.contact-me-section .section-contents .contact-info ul li a:hover {
+  background: black;
+  color: white;
+  border: solid orange 4px;
+  border-radius: 15px;
+  text-shadow: none;
 }
